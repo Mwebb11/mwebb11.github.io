@@ -27,17 +27,13 @@ body, html {
     font-size:28px;
   }
 
-  .content-div {
-    padding: 20px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+ 
 
 /* ==NAVBAR== */
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    background-color: #9b242a;
+    background-color: #000000;
     border: none;
     font-weight: bold;
   }
@@ -74,31 +70,52 @@ body, html {
 
 /* ==HEADER SECTION== */
   #headerSection {
-    background: #9b242a; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#9b242a, #4c3177); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#9b242a, #4c3177); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#9b242a, #4c3177); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#9b242a, #4c3177); /* Standard syntax */
-    height: 100vh;
+    background: #000000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#000000, #2a2a2b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000000, #2a2a2b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#080001, #2a2a2b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000000, #2a2a2b); /* Standard syntax */
+    height: 113vh;
+    
   }
   #positioner{
     position: relative;
     top: 50%;
     transform: translateY(-40%);
+    overflow:hidden;
+    position:relative;
+    z-index: 1;
+    width: 100%;
   }
+   #canvas {
+    z-index:0;
+    background:#010222;
+    width: 100%;
+    padding:0px;
+    }
   .header-contact-imgs {
     height: 30px;
     width: 30px;
-    margin: 5px;
+    margin-top: 70px;
+    padding: 10px;
+
   }
   .banner-text{                       /* PAGE HEADER */
     font-size: 30px;
     color: #fff;
     font-weight: 500;
+    color:rgb(199, 199, 199);
+position:absolute;
+left:0px;
+width: 100%;
+z-index:5;
+
+text-align: center;
   }
   .downArrow{
     font-size: 2rem;
-    color: #fff;
+    color: rgb(3, 0, 0);
+    margin-top: 40%;
   }
   
 /* ==ABOUT ME SECTION== */
@@ -125,7 +142,6 @@ body, html {
     padding: 10px;
   }
 
-.col-xs-4.col-sm-3.col-md-2.skill-div {}
 
   .skill-img {
     height: 80px;
@@ -184,6 +200,7 @@ body, html {
     height: 30px;
     width: 30px;
     margin: 5px;
+    
   }
 
 /* ==FOOTER== */
