@@ -163,9 +163,9 @@
 
         // constructor
         (function() {
-            _this.pos = pos || null;
-            _this.radius = rad || null;
-            _this.color = color || null;
+            _this.pos = pos || none;
+            _this.radius = rad || none;
+            _this.color = color || none;
         })();
 
         this.draw = function() {
