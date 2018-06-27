@@ -12,7 +12,7 @@
     </head>
     <body>
         <div id= "headerSection">
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <nav class="navbar navbar-default ">
                <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
@@ -54,13 +54,13 @@
                             </div>
                     </div>
                 </div>
-                <canvas id="canvas" width="900" height="900"></canvas>
-<canvas id="texCanvas" width="400" height="400" style="display:none;"></canvas>
-<img id="get" style="display:none;" />
-                <br><br><br>
-               
-                
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <p id="front-name">Digital Artisan <span>Merritt Webb</span> &mdash; Full Stack Web Developer&mdash;</p>
+                  </div>
+                <br><br><br> 
             </section>
+            
         </div>
         <div id="aboutMeSection"> <!--ANCHOR-->
             <section class="container content-div">
@@ -257,6 +257,7 @@
         </footer>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
         <script type="text/javascript" src= "tester.js"></script>
       <script>
             // SMOOTH SCROLLING

@@ -1,13 +1,58 @@
 /* ==UNIVERSAL== */
 body, html {
     background-color: #fff;
-    color: #333;
+    color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
   }
   
-  p {
-    font-size: 16px;
+  #front-name {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    display: inline-block;
+    border: 4px double rgb(255, 255, 255);
+    border-width: 4px 0;
+    padding: 1.0em 0em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+    text-align: center;
+    color:white;
+  }
+  
+  p span {
+  
+    font: 400 3em/1 "Oswald", sans-serif;
+    letter-spacing: 20;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+  
+  /* Clip Background Image */
+  
+    background: url(../spacepic.jpg) ;
+    -webkit-background-clip: text;
+  
+  /* Animate Background Image */
+  
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 40s linear infinite;
+  
+  /* Activate hardware acceleration for smoother animations */
+  
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+  }
+  
+  /* Animate Background Image */
+  
+  @-webkit-keyframes aitf {
+    0% { background-position: -200% 50%; }
+    100% { background-position: 250% 50%; }
+    0% { background-position: -100% 50%; }
   }
 
   a {
@@ -33,7 +78,7 @@ body, html {
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    background-color: #000000;
+    background-color: transparent;
     border: none;
     font-weight: bold;
   }
@@ -80,31 +125,66 @@ body, html {
   }
   #positioner{
     position: relative;
-    top: 50%;
-    transform: translateY(-40%);
+   
+    
     overflow:hidden;
     position:relative;
     z-index: 1;
     width: 100%;
+    background-color: #000000;
+    
   }
-   #canvas {
-    z-index:0;
-    background:#010222;
+ 
+  .large-header {
+    position: relative;
     width: 100%;
-    padding:0px;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+   
+  }
+  #large-header {
+    background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
+  }
+  .main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .demo-1 .main-title {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+  }
+  .main-title .thin {
+    font-weight: 200;
+  }
+  @media only screen and (max-width: 768px) {
+    .demo-1 .main-title {
+      font-size: 3em;
     }
+  }
+  
   .header-contact-imgs {
-    height: 30px;
+    height: 12px;
     width: 30px;
-    margin-top: 70px;
+    margin-top: 500px;
     padding: 10px;
-
+margin-left: 40px;
   }
   .banner-text{                       /* PAGE HEADER */
     font-size: 30px;
     color: #fff;
     font-weight: 500;
-    color:rgb(199, 199, 199);
+    color:#c7c7c7;
 position:absolute;
 left:0px;
 width: 100%;
@@ -114,9 +194,11 @@ text-align: center;
   }
   .downArrow{
     font-size: 2rem;
-    color: rgb(3, 0, 0);
-    margin-top: 40%;
+    color: rgb(255, 253, 253);
+   top: 60px;
+  left: 1.5%;
   }
+  
   
 /* ==ABOUT ME SECTION== */
   #headshot-img {
@@ -327,3 +409,4 @@ text-align: center;
       font-size: 16px;
     }
   }
+  
