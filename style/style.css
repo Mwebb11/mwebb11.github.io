@@ -148,6 +148,11 @@ body, html {
   #large-header {
     background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
   }
+
+  #helpfromstevenbanner {
+width: 300px;
+  }
+
   .main-title {
     position: absolute;
     margin: 0;
@@ -168,7 +173,7 @@ body, html {
     font-weight: 200;
   }
   @media only screen and (max-width: 768px) {
-    .demo-1 .main-title {
+    .demo-1 #Front-name {
       font-size: 3em;
     }
   }
