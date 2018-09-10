@@ -21,7 +21,11 @@ body, html {
     text-align: center;
     color:white;
   }
-  
+  @media (max-width: 767px) {                  
+    #front-name {
+       display: none;
+    }
+ }
   p span {
   
     font: 400 3em/1 "Oswald", sans-serif;
